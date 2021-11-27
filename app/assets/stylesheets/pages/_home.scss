@@ -1,1 +1,14 @@
 // Specific CSS for your home-page
+.wagon-cards-with-map {
+  display: flex;
+}
+
+.wagon-cards-with-map .wagon-cards {
+  flex-grow: 1;
+}
+
+#map {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}

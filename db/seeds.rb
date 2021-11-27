@@ -1,7 +1,10 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+cities = ScrapWagon.get_all_cities
+cities.each do |city|
+  city = City.find_or_create_by!(ScrapWagon.new(city).get_wagon_address)
+  if City.not_geocoded.include?(city)
+    city.update!(
+      latitude: Geocoder.search(city.place).first.coordinates[0],
+      longitude: Geocoder.search(city.place).first.coordinates[1]
+    )
+  end
+end
