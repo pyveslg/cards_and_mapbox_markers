@@ -13,6 +13,8 @@ This code might help you to:
 
 Enjoy!
 
+## Screenshot
+![Map with cards app screenshot](https://res.cloudinary.com/pywagon/image/upload/v1638469962/screenshot_ixngya.png)
 
 ## Demo Setup
 
