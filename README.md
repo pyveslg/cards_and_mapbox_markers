@@ -1,6 +1,6 @@
 # Le Perch' Demo : Cards with map with markers and popups
 
-This application scraps all the Cities where Le Wagon is settled and display them according to world zones within cards and a map.
+This application scraps all the Cities where Le Wagon is settled and displays them according to world zones within cards and a map.
 
 This code might help you to:
 
