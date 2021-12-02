@@ -1,0 +1,9 @@
+<%= link_to city.url, target: "_blank", class: "popup-link" do %>
+  <div class="infowindow-img" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= city.photo_url %>);">
+    <div class="city-infos">
+      <h3><%= city.place %></h3>
+      <p><%= city.zone %></p>
+    </div>
+  </div>
+
+<% end %>

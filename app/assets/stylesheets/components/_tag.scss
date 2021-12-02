@@ -1,0 +1,23 @@
+.tag-selector {
+  position: absolute;
+  transform: scale(0);
+}
+
+.tag-selector + label {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.7rem;
+  border-radius: 50rem;
+  padding: 0.1rem 0.5rem;
+  background-color: #ECEAFF;
+  color: $danger;
+  border: 1px solid $danger;
+  margin-right: 0.6rem;
+  margin-bottom: 0.4rem;
+  &:last-child { margin-right: 0}
+}
+
+.tag-selector:checked + label {
+  background-color: $danger;
+  color: white;
+}

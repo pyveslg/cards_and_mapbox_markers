@@ -1,0 +1,8 @@
+<h1>Le Wagon is in <span class="color-red"><%= pluralize(@cities.count, "city") %></span> in <%= filter == "World" ? "the World" : filter %></h1>
+<div class="wagon-cards">
+  <% @cities.each do |city| %>
+    <div class="wagon-card" style="background-image: url(<%= city.photo_url %>)" data-action="click->mapbox#highlightMarker" data-mapbox-target="card" data-target="marker_<%= city.id %>">
+      <%= city.place %>
+    </div>
+  <% end %>
+</div>

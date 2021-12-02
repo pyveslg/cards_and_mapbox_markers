@@ -1,0 +1,38 @@
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+}
+
+
+.popup-link {
+  text-decoration: none;
+  color: white;
+  &:hover { color: white}
+}
+.infowindow-img {
+  height: 200px;
+  min-width: 300px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 4px;
+  overflow: hidden;
+  .city-infos {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: .5em 1em;
+    background-image: linear-gradient(rgba(0,0,0,0.07), rgba(0,0,0,0.4))
+  }
+  .city-infos p,
+  .city-infos h3 { margin: 0 }
+  .city-infos p { text-transform: uppercase}
+  .city-infos h3 {
+    font-size: 1.6em;
+    text-shadow: 0px 4px 16px rgb(0,0,0);
+  }
+}
+
